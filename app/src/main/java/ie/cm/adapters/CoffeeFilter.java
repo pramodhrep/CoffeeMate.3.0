@@ -1,5 +1,6 @@
 package ie.cm.adapters;
 
+import ie.cm.activities.Base;
 import ie.cm.models.Coffee;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,6 +12,7 @@ public class CoffeeFilter extends Filter {
 	private List<Coffee> 		originalCoffeeList;
 	private String 				filterText;
 	private CoffeeListAdapter 	adapter;
+
 
 	public CoffeeFilter(List<Coffee> originalCoffeeList, String filterText,
 			CoffeeListAdapter adapter) {

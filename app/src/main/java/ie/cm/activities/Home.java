@@ -38,6 +38,7 @@ public class Home extends Base {
                         }).show();
             }
         });
+    coffeeList.clear(); // To avoid redundancy of coffee items
     this.setupCoffees();
     }
 
@@ -70,8 +71,6 @@ public class Home extends Base {
                     .beginTransaction()
                     .replace(R.id.fragment_layout, coffeeFragment)
                     .commit(); // add/replace in the current activity
-
-
     }
 
     public void setupCoffees(){
